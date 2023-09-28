@@ -83,7 +83,7 @@ body.new-body {
 }
 
 .wrapper {
-    padding: 10px 20px;
+    padding: 10px 10px;
     width: 800px;
     transition: .5s;
 }
@@ -97,7 +97,7 @@ body.new-body {
     justify-content: space-around;
     text-align: center;
     margin-bottom: 50px;
-    padding: 25px;
+    padding: 15px;
     border: none;
     transition: transform .5s;
 }
@@ -113,12 +113,12 @@ body.new-body {
 }
 
 .timerDisplay .display-row input {
-    width: 150px;
+    width: 120px;
     text-align: center;
-    height: 100px;
-    font-size: 6rem;
+    height: 70px;
+    font-size: 4rem;
     border: 1px groove #00f6ff;
-    border-radius: 20px;
+    border-radius: 10px;
     outline: none;
     background: transparent;
     color: #fff;
@@ -152,7 +152,7 @@ body.new-body {
 }
 
 .inputButtons .inputRow {
-    margin-block: 25px;
+    margin-block: 5px;
 }
 
 .inputRow button {
@@ -188,14 +188,14 @@ body.new-body {
     margin-top: 50px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .btnGroup button {
-    width: 25%;
-    padding: 20px;
+    width: 15%;
+    padding: 1px;
     border-radius: 10px;
-    border: 2px groove;
+    border: 5px groove;
     outline: none;
     font-size: 1.5rem;
     font-weight: 700;
@@ -203,7 +203,7 @@ body.new-body {
     color: #fff;
     font-size: 2rem;
     font-weight: 700;
-    box-shadow: -7px 9px 15px 0px rgb(0 0 0);
+    box-shadow: -7px 2px 5px 0px rgb(0 0 0);
     cursor: pointer;
     margin-inline: 10px;
 }
@@ -268,4 +268,50 @@ h1.active {
 .msg-back-btn span {
     font-size: 48px;
     color: #fff;
+}
+
+
+/* Default styles for larger screens */
+/* ... Your existing styles ... */
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .timerDisplay {
+        flex-direction: column; /* Stack timer elements vertically on smaller screens */
+        align-items: center; /* Center align timer elements */
+        margin-bottom: 20px; /* Reduce margin for spacing */
+    }
+
+    .timerDisplay .display-row input {
+        width: 100px; /* Reduce width of input elements */
+        height: 80px; /* Reduce height of input elements */
+        font-size: 3rem; /* Reduce font size for input elements */
+    }
+
+    .inputButtons .inputRow {
+        margin-block: 4px; /* Reduce spacing between button rows */
+    }
+
+    .inputRow button {
+        width: 50px; /* Reduce width of buttons */
+        height: 50px; /* Reduce height of buttons */
+        font-size: 1.5rem; /* Reduce font size for buttons */
+        margin-inline: 5px; /* Reduce margin between buttons */
+    }
+}
+
+/* Media query for even smaller screens */
+@media (max-width: 480px) {
+    .timerDisplay .display-row input {
+        width: 80px; /* Further reduce width of input elements */
+        height: 60px; /* Further reduce height of input elements */
+        font-size: 2rem; /* Further reduce font size for input elements */
+    }
+
+    .inputRow button {
+        width: 40px; /* Further reduce width of buttons */
+        height: 40px; /* Further reduce height of buttons */
+        font-size: 1.2rem; /* Further reduce font size for buttons */
+        margin-inline: 3px; /* Further reduce margin between buttons */
+    }
 }
