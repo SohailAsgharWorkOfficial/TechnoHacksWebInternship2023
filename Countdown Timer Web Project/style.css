@@ -136,7 +136,7 @@ body.new-body {
 
 .timerDisplay .display-row span {
     margin-top: 10px;
-    color: #05ff2b;
+    color: #00f6ff;
     font-size: 1.5rem;
 }
 
@@ -279,23 +279,23 @@ h1.active {
     .timerDisplay {
         flex-direction: column; /* Stack timer elements vertically on smaller screens */
         align-items: center; /* Center align timer elements */
-        margin-bottom: 20px; /* Reduce margin for spacing */
+        margin-bottom: 15%; /* Reduce margin for spacing */
     }
 
     .timerDisplay .display-row input {
-        width: 100px; /* Reduce width of input elements */
-        height: 80px; /* Reduce height of input elements */
-        font-size: 3rem; /* Reduce font size for input elements */
+        width: 70px; /* Reduce width of input elements */
+        height: 50px; /* Reduce height of input elements */
+        font-size: 1rem; /* Reduce font size for input elements */
     }
 
     .inputButtons .inputRow {
-        margin-block: 4px; /* Reduce spacing between button rows */
+        margin-block: 2px; /* Reduce spacing between button rows */
     }
 
     .inputRow button {
         width: 50px; /* Reduce width of buttons */
         height: 50px; /* Reduce height of buttons */
-        font-size: 1.5rem; /* Reduce font size for buttons */
+        font-size: 0.5rem; /* Reduce font size for buttons */
         margin-inline: 5px; /* Reduce margin between buttons */
     }
 }
@@ -303,15 +303,15 @@ h1.active {
 /* Media query for even smaller screens */
 @media (max-width: 480px) {
     .timerDisplay .display-row input {
-        width: 80px; /* Further reduce width of input elements */
-        height: 60px; /* Further reduce height of input elements */
-        font-size: 2rem; /* Further reduce font size for input elements */
+        width: 70px; /* Further reduce width of input elements */
+        height: 50px; /* Further reduce height of input elements */
+        font-size: 1rem; /* Further reduce font size for input elements */
     }
 
     .inputRow button {
         width: 40px; /* Further reduce width of buttons */
         height: 40px; /* Further reduce height of buttons */
-        font-size: 1.2rem; /* Further reduce font size for buttons */
+        font-size: 0.5rem; /* Further reduce font size for buttons */
         margin-inline: 3px; /* Further reduce margin between buttons */
     }
 }
