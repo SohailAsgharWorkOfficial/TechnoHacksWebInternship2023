@@ -7,6 +7,9 @@
     font-family: 'Poppins', sans-serif;
 }
 
+p{
+    size: 20px;
+}
 body {
     max-width: 100vw;
     min-height: 100vh;
